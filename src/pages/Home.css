@@ -1,0 +1,112 @@
+
+
+#home-info {
+    background-image: url('./img/gradient-network-connection-background_23-2148872043.jpg'); /* Path to your background image */
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    width: 100%;
+    height: 95vh;
+}
+
+
+#home-info .ok {
+    padding-top: 140px;
+}
+
+#home-info .ok img {
+    width: 500px;
+    height: 533px;
+   
+}
+
+#home-info img {
+   align-self: center;
+   margin-left: 20%;
+
+}
+
+#home-info .jao {
+    margin-top: 5%;
+}
+
+#home-info .btn {
+    color: #f1e8e8;
+    background: rgb(16, 16, 17);
+}
+
+
+
+#home-info .btn:hover {
+    color: #a605a1;
+    background: rgb(253, 251, 251);
+}
+
+#home-info .card {
+    background: transparent;
+    border: 0px;
+}
+
+/*  */
+.circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.circles li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    background: rgba(173, 216, 230, 0.8); /* Light blue color for bubbles */
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(173, 216, 230, 0.8), 0 0 20px rgba(173, 216, 230, 0.6);
+    animation: float 10s linear infinite;
+    opacity: 0;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh); /* Vertical movement to simulate floating */
+        opacity: 0;
+    }
+}
+
+/* Positioning the bubbles randomly with varying sizes */
+.circles li:nth-child(1) { bottom: 10%; left: 10%; width: 40px; height: 40px; animation-delay: 0s; }
+.circles li:nth-child(2) { bottom: 10%; left: 20%; width: 30px; height: 30px; animation-delay: 6s; }
+.circles li:nth-child(3) { bottom: 10%; left: 30%; width: 50px; height: 50px; animation-delay: 3s; }
+.circles li:nth-child(4) { bottom: 10%; left: 40%; width: 20px; height: 20px; animation-delay: 7s; }
+.circles li:nth-child(5) { bottom: 10%; left: 50%; width: 60px; height: 60px; animation-delay: 11s; }
+.circles li:nth-child(6) { bottom: 10%; left: 60%; width: 25px; height: 25px; animation-delay: 9s; }
+.circles li:nth-child(7) { bottom: 10%; left: 70%; width: 45px; height: 45px; animation-delay: 14s; }
+.circles li:nth-child(8) { bottom: 10%; left: 80%; width: 35px; height: 35px; animation-delay: 13s; }
+.circles li:nth-child(9) { bottom: 10%; left: 90%; width: 55px; height: 55px; animation-delay: 19s; }
+.circles li:nth-child(10) { bottom: 10%; left: 100%; width: 50px; height: 50px; animation-delay: 20s; }
+
+.smaller-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px; /* Example: Restrict maximum height */
+    transition: transform 0.3s ease-in-out; /* Smooth transition on transform */
+  }
+  
+  .smaller-image:hover {
+    transform: scale(1.1); /* Scale up to 110% on hover */
+  }
+  
+  #info{
+    margin-top: 5%;
+  }
+  
